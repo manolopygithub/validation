@@ -1,0 +1,4 @@
+#Create an empty file hello, and then adds permisions to that file
+touch hello
+chmod 754 hello
+
