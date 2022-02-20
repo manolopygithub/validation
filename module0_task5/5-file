@@ -1,0 +1,4 @@
+#Create a file named exactly \*\\'"DevOps"\'\\*$\?\*\*\*\*\*:) and contains the text Hello DevOps
+touch \\\*\\\\\'\"DevOps\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
+echo "Hello DevOps" >> \\\*\\\\\'\"DevOps\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
+
