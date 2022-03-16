@@ -20,7 +20,7 @@ Here are what it needs to have before build the web site:
 1. The makefile needed for build the web site is under folder: /home/Vagrant/hugo_web_site.
 2. Copy the make file to folder: new_site_with_hugo.
 3. Execute the command: make build, it will create a folder named: dist, in which it will be the website.
-4. If you modify something, Ex. (new posts, change theme, etc), execute the command: make clean, and then repit the step 3.
+4. If you modify something (eg. new posts, change theme, etc), execute the command: make clean, and then repit the step 3.
 
 
 
