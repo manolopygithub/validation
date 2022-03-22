@@ -1,3 +1,4 @@
+#
 #Variable containnig the current date plus the text "Date: "
 SDATE='Date: ' $(shell date +%Y/%m/%d)
 

@@ -2,7 +2,7 @@
 SITEFOLDER=new_site_with_hugo
 
 #Installing hugo and make
-#apt-get update && apt-get install -y hugo make wget
+apt-get update && apt-get install -y hugo make wget
 
 rm -f -R $SITEFOLDER
 hugo new site $SITEFOLDER
