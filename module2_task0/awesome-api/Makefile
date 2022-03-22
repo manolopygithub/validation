@@ -5,9 +5,9 @@ run :  ##Run the binary application in background named awesome-api
 	./awesome-api > ./awesome-api.log >&1 &
 
 stop : ##Kill the process ID of the binary awesome-api, if the process exists
-       ifneq (, $(shell pgrep awesome-api))
+ifneq (, $(shell pgrep awesome-api))
 	 kill $(shell pgrep awesome-api)
-       endif
+endif
 
 clean :##Remove the binary file awesome-api and the text file awesome-api.log
 	rm -f awesome-api awesome-api.log
