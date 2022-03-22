@@ -21,6 +21,3 @@ Here are what it needs to have before build the web site:
 2. Copy the make file to folder: new_site_with_hugo.
 3. Execute the command: make build, it will create a folder named: dist, in which it will be the website.
 4. If you modify something (e.g. new posts, change theme, etc), execute the command: make clean, and then repit the step 3.
-
-
-
