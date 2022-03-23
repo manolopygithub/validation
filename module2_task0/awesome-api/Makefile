@@ -21,4 +21,5 @@ help :  ##Prints help about the targets in this makefile
 	@echo run : Run the application in background, and creates the log file
 	@echo stop : kill the application if is runnig
 	@echo clean: Removes the binary file and the log file
+	@echo test: Test the application, first for fail, second for success
 	@echo help : Show this help usage
