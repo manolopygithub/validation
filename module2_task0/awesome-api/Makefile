@@ -19,7 +19,7 @@ test : ##Test the application, executing first time for fail, second time for su
 help :  ##Prints help about the targets in this makefile
 	@echo build : Build the binary file of the application
 	@echo run : Run the application in background, and creates the log file
-	@echo stop : kill the application if is runnig
+	@echo stop : Kill the application if is runnig
 	@echo clean: Removes the binary file and the log file
-	@echo test: Test the application, first for fail, second for success
+	@echo test : Test the application, first for fail, second for success
 	@echo help : Show this help usage
