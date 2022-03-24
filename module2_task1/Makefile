@@ -19,7 +19,7 @@ test : ##Test the application, executing first time for fail, second time for su
 	curl http://localhost:9999
 	curl http://localhost:9999/health
 
-lint : ##Executing checks
+lint : ##Executing statics checks
 	golangci-lint run
 
 help :  ##Prints help about the targets in this makefile
