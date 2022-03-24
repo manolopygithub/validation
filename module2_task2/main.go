@@ -28,7 +28,7 @@ func setupRouter() *mux.Router{
   r := mux.NewRouter()
 
   // When an HTTP GET request is received on the path /health, delegates to the function "HealthCheckHandler()"
-  //r.HandleFunc("/health", HealthCheckHandler).Methods("GET")
+  r.HandleFunc("/health", HealthCheckHandler).Methods("GET")
 
   // when an HTTP GET request is received on the path /hello
   r.HandleFunc("/hello", HelloHandler).Methods("GET")
