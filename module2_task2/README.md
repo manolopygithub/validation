@@ -19,5 +19,8 @@ Here are what it needs to have before build the application:
 1. Execute the command: "make clean" in order to remove the binary file and the log file.
 
 ##4. Run Lint Check
-1. Execute the command: "make lint" in order run static analysis the source code.
+1. Execute the command: "make lint" in order to run static analysis of the source code.
+
+##5. Run Unit Test
+1. Execute the command: "male unit-tests" in order to run the unit test based on the file main_test.go.
 
