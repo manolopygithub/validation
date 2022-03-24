@@ -30,31 +30,19 @@ func Test_HelloHandler(t *testing.T) {
       responseCode: 200,
       body:         "Hello Rosalind Franklin!",
     },
-    {
-      name:         "Manuel Berni",
-      queryString:  "name=Manuel Berni",
-      responseCode: 200,
-      body:         "Hello Manuel Berni!",
-    },
-    {
-      name:         "Mechi Pacher",
-      queryString:  "name=Mechi Pacher",
-      responseCode: 200,
-      body:         "Hello Mechi Pacher!",
-    },
     //TEST WITH PARAMETER NAME EMPTY
     {
-      name:         "",
-      queryString:  "name",
-      responseCode: 200,
-      body:         "Hello there!",
-    },
-    //TEST WITHOUT PARAMETER NAME
-    {
-      name:         "",
+      name:         "Empty Name",
       queryString:  "",
       responseCode: 200,
       body:         "Hello there!",
+    },
+    //TEST WITH TWO PARAMETER NAME
+    {
+      name:         "Two Names",
+      queryString:  "name=Daniel Defoeg&name=Emily Bronte",
+      responseCode: 200,
+      body:         "Hello Emily Bronte!",
     },
     // INSERT MORE TESTS HERE
   }
@@ -92,9 +80,3 @@ func Test_HelloHandler(t *testing.T) {
   }
 }
 
-func Test_main(t *testing.T){
-  
-}
-
-func Test_SetupRouter(t *testing.T){
-}

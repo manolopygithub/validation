@@ -1,14 +1,16 @@
 package main
 
+
 import (
   "fmt"
   "io"
-  "log"
+  //"log"
   "net/http"
-  "os"
-  "github.com/gorilla/mux"
+  //"os"
+  //"github.com/gorilla/mux"
 )
 
+/*
 func main(){
   httpAddr := "0.0.0.0:9999"
   if port := os.Getenv("PORT"); port != ""{
@@ -34,7 +36,6 @@ func setupRouter() *mux.Router{
   return r
 }
 
-/*
 func HealthCheckHandler(w http.ResponseWriter, r *http.Request){
   // Print a line in the logs
   fmt.Println("HIT: healthcheck")

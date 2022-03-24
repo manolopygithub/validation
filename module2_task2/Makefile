@@ -19,10 +19,10 @@ test : ##Test the application, executing first time for fail, second time for su
 	curl http://localhost:9999
 	curl http://localhost:9999/hello
 
-lint : ##Executing checks
+lint : ##Executing statics checks
 	golangci-lint run
 
-unit-tests:
+unit-tests: ##Execute the unit tests
 	go test -v -short -coverprofile=coverage-units.out
 
 help :  ##Prints help about the targets in this makefile
