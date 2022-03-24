@@ -18,6 +18,6 @@ Here are what it needs to have before build the application:
 ## 3. Clean Everything
 1. Execute the command: "make clean" in order to remove the binary file and the log file.
 
-##4. Run Lint Check
+## 4. Run Lint Check
 1. Execute the command: "make lint" in order to run static analysis of the source code.
 
