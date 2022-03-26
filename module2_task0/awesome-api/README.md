@@ -3,7 +3,7 @@
 Here are what it needs to have before build the application:
 
 * [Golang v1.15.+](https://go.dev/)
-* [2 GNU Make Docs](https://www.gnu.org/software/make/manual/html_node/index.html)
+* [2 GNU Make Docs](https://www.gnu.org/software/make/)
 
 ##  LifeCycle
 
