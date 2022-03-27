@@ -19,5 +19,5 @@ post :
 
 #Clean directive, remove recursivily the dist folder
 clean :
-	rm -r dist/*
+	rm -f -r dist/*
 
