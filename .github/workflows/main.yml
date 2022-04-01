@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone manolopygithub/validation repository
-        uses: manolopygithub/validation@v2
+        uses: manolopygithub/validation
         with:
           owner: 'manolopygithub'
           repository: 'validation'
