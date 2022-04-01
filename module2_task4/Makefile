@@ -22,7 +22,7 @@ check:  ##Lint of the Markdown welcome.md file using the command line markdownli
 	markdown-link-check content/posts/welcome.md
 
 validate:##Validate the file index.html
-	./w3c_validator.py dist/index.html
+	w3c_validator.py dist/index.html
 
 help :  ##Prints help about the targets in this makefile
 	@echo build : Build the site in dist folder, the folder dist is set as the publish directory in config.toml file
