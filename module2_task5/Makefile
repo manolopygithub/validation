@@ -31,7 +31,7 @@ lint:   ##Lint of the Markdown welcome.md file using the command line markdownli
 test:  ##Runs the units tests, the integration tests and the w3c validator
 	go test -v -short -coverprofile=coverage-units.out
 	go test -v -coverprofile=coverage-integrations.out
-	./w3c_validator.py dist/index.html
+	w3c_validator.py dist/index.html
 
 help :  ##Prints help about the targets in this makefile
 	@echo hugo-build: Build the site in dist folder.
