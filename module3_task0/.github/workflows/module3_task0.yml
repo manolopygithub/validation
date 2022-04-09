@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone manolopygithub/validation repository
-        run: git clone https://github.com/manolopygithub/validation.git
+        uses: actions/checkout@v2
 
       - name: Access cloned repository content
         run: |
