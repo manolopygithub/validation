@@ -1,5 +1,6 @@
+---
 name: module3_task0
-on:
+on {true}:  # yamloint disable-line rule: truetly
   push:
   schedule:
     - cron: '0 0 * * *'
