@@ -2,27 +2,27 @@
 #Variable containnig the current date plus the text "Date: "
 SDATE='Date: ' $(shell date +%Y/%m/%d)
 
-build: 
+build : 
 	hugo -D
 
 clean : stop  ##Call stop target first and then removes all files into dist folder, awesome-api, *.log and *.out files
 	rm -f -r dist/*
 	rm -f awesome-api *.log *.out
 
-lint:   ##Lint of the Markdown welcome.md file using the command line markdownlint-cli and
+lint :  ##Lint of the Markdown welcome.md file using the command line markdownlint-cli and
 	##Analysis of the links with the command line markdown-link-check
 	markdownlint content/posts/welcome.md
 	markdown-link-check content/posts/welcome.md
 	golangci-lint run
 	shellcheck setup.sh
 
-unit-tests: ##Runs the units tests
+unit-tests : ##Runs the units tests
 	go test -v -short -coverprofile=coverage-units.out
 
-validate: ##Runs w3c validator
+validate : ##Runs w3c validator
 	w3c_validator.py dist/index.html
 
-integration-tests: ##Runs Integration Tests
+integration-tests : ##Runs Integration Tests
 	go test -v --coverprofile=coverage-integrations.out
 
 help :  ##Prints help about the targets in this makefile
