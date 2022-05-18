@@ -1,5 +1,5 @@
 ---
-name: module3_task0
+name: module3_task1
 on:
   push:
   schedule:
@@ -7,12 +7,32 @@ on:
 jobs:
   clone_repository:
     name: Clone My Repository
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu 18.04
     steps:
       - name: Clone manolopygithub/validation repository
         uses: actions/checkout@v2
 
-      - name: Access cloned repository content
+      - name: Install necesary tool
         run: |
-          cd module3_task0
-          make help
+          cd module3_task1
+          sudo ./setup.sh
+
+      - name: Make lint
+        run: |
+          sudo make lint
+
+      - name: Make build
+        run: |
+          sudo make build
+
+      - name: Make unit-tests
+        run: |
+          sudo make unit-tests
+
+      - name: Make validate
+        run: |
+          sudo make validate
+
+      - name: Make integration-tests
+        run: |
+          sudo make integration-tests
