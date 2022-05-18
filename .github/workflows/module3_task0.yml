@@ -1,0 +1,18 @@
+---
+name: module3_task0
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  clone_repository:
+    name: Clone My Repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone manolopygithub/validation repository
+        uses: actions/checkout@v2
+
+      - name: Access cloned repository content
+        run: |
+          cd module3_task0
+          make help
