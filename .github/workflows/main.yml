@@ -1,5 +1,6 @@
+---
 name: module3_task1
-on {true}:  # yamlint disable-line rule:truetly
+on:
   push:
   schedule:
     - cron: '0 0 * * *'
