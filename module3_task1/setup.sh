@@ -4,6 +4,8 @@ SITEFOLDER=new_hugo_website
 #Installing hugo and make
 sudo apt-get update && apt-get install -y hugo make wget 
 
+sudo nvm install v18.2.0
+
 sudo npm install -g markdownlint-cli
 
 sudo npm install -g markdown-link-check
